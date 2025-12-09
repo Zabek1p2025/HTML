@@ -1,0 +1,138 @@
+body {
+    background-color: #0D0D0D;
+    color: #00D100;
+    
+}
+
+section {
+    border: dotted 3px #00D100;
+}
+
+header{
+    background-color: #0D0D0D;
+     text-align: center;
+    /*border: #008000 1px solid;
+    border-radius:30px;*/
+    margin-bottom: 50px;
+}
+
+
+
+#section1 {
+    background-color:#0D0D0D;
+    color: #00D100;
+    font-size: large;
+    margin-bottom: 15px;
+    margin-right: 200mm;
+}
+
+#section1_1{
+    text-align: center;
+
+}
+
+/*#banner1 {
+    width="1400" ;
+    height="400";
+}*/
+
+
+
+#section2 {
+    background-color:#0D0D0D;
+    color: #00D100;
+    font-size: large;
+    margin-bottom: 15px;
+    margin-left:85mm;
+    margin-right: 85mm;
+}
+
+#section2_1{
+    text-align: center;
+
+}
+
+#section3 {
+    background-color:#0D0D0D;
+    color: #00D100;
+    font-size: large;
+    margin-bottom: 15px;
+    margin-right: 200mm;
+
+}
+
+#section3_1{
+    text-align: center;
+
+}
+
+a:link {
+    background-color:#0D0D0D;
+    color: #00D100;
+    font-size: large;
+    margin-bottom: 2px;
+    text-decoration:wavy;
+   
+}
+a:hover {
+    background-color:#0D0D0D;
+    color: #00D100;
+    font-size: medium;
+    margin-bottom: 2px;
+    text-decoration:underline;
+   
+}
+a:visited {
+    background-color:#0D0D0D;
+    color: #008000;
+    font-size: medium;
+    margin-bottom: 2px;
+    text-decoration:underline;
+   
+}
+#baner1 {
+    width: auto;
+    height: auto;
+    
+}
+
+#section4 {
+    background-color:#0D0D0D;
+    color: #00D100;
+    font-size:larger;
+    margin-bottom: 15px;
+    margin-left:85mm;
+    margin-right: 85mm;
+    text-align: center;
+
+}
+
+#section4_1 {
+     text-align: center;
+}
+
+#link2 {
+    text-align: center;
+    font-size: large;
+}
+#baner_gal {
+    width:50%;
+    height: auto;
+    border: #008000 3px solid;
+}
+nav ul {
+    flex-direction: row;
+    list-style: none;
+}
+.buttons {
+    font-size: 20px;
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #0D0D0D;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #00D100;
+  min-width: 200px;
+}
