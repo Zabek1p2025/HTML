@@ -1,0 +1,15 @@
+body{
+    background-color: bisque;
+    color: plum;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+button{
+    color: rgb(176, 93, 184);
+    background-color: darkmagenta;
+    border-radius: 8px;
+
+}
