@@ -37,3 +37,32 @@ kliknij4.addEventListener("mousemove",function(){
         kliknij4.style.backgroundColor = "green"
     }, 10);
 })
+let formularz = document.forms.formularz1
+
+formularz.submit.addEventListener("click", function(){
+    let imie = formularz.imie.value
+    let nazwisko = formularz.nazwisko.value
+    let wiek = formularz.wiek.value
+    let adres = formularz.adres.value
+    let wzrost = formularz.wzrost.value
+
+    wynik.textContent= "Nazywasz się "+imie+ " "+nazwisko+" masz "+wiek +" lat "+"twój wzrost to "+wzrost + " mieszkasz pod adresem "+ adres
+})
+
+function auta(){
+    let wynik1 = document.getElementById("wynik1")
+    let lista = document.getElementById("wybur")
+    wynik1.textContent = lista.value
+}
+
+// let zmiana = document.forms.formlurzchange
+// let wynik2 = document.getElementById("wypisz")
+
+// zmiana.addEventListener("change", function(){
+//     let kotki = document.forms.formlurzchange.koty
+// for(let i = 0; i < kotki.value.length; i++){
+//     if(kotki[i].checked)
+//     wynik2.textContent = kotki[i].value
+// }
+
+// })

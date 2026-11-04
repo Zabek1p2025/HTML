@@ -33,11 +33,11 @@
 
         <br><br>
 <form name="buttons">
-        <lable><input type="button" name="kliknij" value="Kliknij mnie" ></lable>
-        <lable><input type="button" name="hover" value="Najedz na mnie" ></lable>
-        <lable><input type="button" name="clicks" value="Kliknij dwa razy" ></lable>
-        <lable><input type="button" name="hold" value="Przytrzymaj" ></lable>
-        <lable><input type="button" name="over" value="poruszaj" ></lable>
+        <lable><input class="button" type="button" name="kliknij" value="Kliknij mnie" ></lable>
+        <lable><input class="button" type="button" name="hover" value="Najedz na mnie" ></lable>
+        <lable><input class="button" type="button" name="clicks" value="Kliknij dwa razy" ></lable>
+        <lable><input class="button" type="button" name="hold" value="Przytrzymaj" ></lable>
+        <lable><input class="button" type="button" name="over" value="poruszaj" ></lable>
 
         </form>
     </section>
@@ -60,13 +60,12 @@
         <p>Co robi submit? Submit to funkcja która umożliwia wysłanie formularza, umożliwia także wyświetlenie danych z pomocą skryptu.</p>
 
         <form id="formularz1">
-            <p>Imię: <input type="text" name="imie" required></p>
-            <p>Nazwisko: <input type="text" name="nazwisko" required></p>
-            <p>Wiek: <input type="number" name="wiek" required></p>
-            <p>Adres: <input type="text" name="adres" required></p>
-            <p>Wzrost: <input type="number" name="wzrost" required></p>
-
-            <button type="submit">Wyświetl dane</button>
+            <label>Imię: <input type="text" name="imie" required></lable><br>
+            <label>Nazwisko: <input type="text" name="nazwisko" required></label><br>
+            <label>Wiek: <input type="number" name="wiek" required></label><br>
+            <label>Adres: <input type="text" name="adres" required></label><br>
+            <label>Wzrost: <input type="number" name="wzrost" required></label><br>
+            <label><input class="button"type="button" value="Wyślij" name="submit"></label><br>
         </form>
 
         <h3>Informacje o użytkowniku</h3>
@@ -82,27 +81,27 @@
 
         <p>Wybierz markę auta</p>
 
-        <select id="mojwybor" onchange="mojafunkcja()">
+        <select id="wybur" onchange="auta()">
             <option value="Audi">Audi
             <option value="BMW">BMW
             <option value="Mercedes">Merceddes
             <option value="Volvo">Volvo
         </select>
 
-        <p id="wynik2">Tu pojawi się wynik: </p>
+        <p id="wynik1">Tu pojawi się wynik: </p>
         </fieldset>
 
         <br><br>
 
         <form id="formularzchange">
             <fieldset>
-            <h3>Formularz z <span id="podkresl">change</span></h3>
+            <h3>Formularz z change</h3>
             <p>Co robi change? Change to funkcja która zmienia daną rzecz po wejściu w interakcje z czymś.</p>
 
             <p>Przykład checkbox</p>
-            <p><input type="checkbox" name="koty" id="kotragdoll" value="ragdoll">Kot rasy ragdoll</p>
-            <p><input type="checkbox" name="koty" id="kotmaine" value="mainecoon">Kot rasy maine coon</p>
-            <p><input type="checkbox" name="koty" id="kotbryt" value="brytyjski">Kot brytyjski</p>
+            <label><input type="checkbox" name="koty" id="kotragdoll" value="ragdoll">Kot rasy ragdoll</label><br>
+            <label><input type="checkbox" name="koty" id="kotmaine" value="mainecoon">Kot rasy maine coon</label><br>
+            <label><input type="checkbox" name="koty" id="kotbryt" value="brytyjski">Kot brytyjski</label><br>
         </form>
 
         <p id="wypisz">Tu pojawi się wynik: </p>
@@ -121,12 +120,5 @@
         </form>
 
     </section>
-
-    <footer>
-        <p>JavaScript - moje notatki</p>
-    </footer>
-
-    
-
 </body>
 </html>
