@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Notatki</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript - notatki z lekcji</h1>
+    </header>
+
+    <nav>
+        <a href="#lekcja1">Lekcja 1 - Zdarzenia</a>
+        <a href="#lekcja2">Lekcja 2 - Formularze</a>
+        <a href="#lekcja3">Lekcja 3 - focus, blur etc.</a>
+    </nav>
+
+    <section id="lekcja1">
+        <h2>Lekcja 1 - Zdarzenia w JavaScript</h2>
+
+        <fieldset>
+            <p>Jak podłączyć zdarzenia w JavaScript? Podłączyć zdarzenia da się na wiele sposobów. Takie jak:</p>
+
+            <p>1.<span id="podkresl">AddEventListener()</span> - Najlepsza metoda. "Nasłuchuje" element, czeka aż coś z nim zrobisz. </p>
+            <p>2.<span id="podkresl">Zdarzenia bezpośrednio w HTML</span> - miesza się z logiką HTML, trudne w utrzymaniu.</p>
+            <p>3.<span id="podkresl">Właściwości DOM</span> - szybkie i czytelne, ALE da się przypisać tylko jedną funkcję, bo potem się nadpisują.</p>
+
+        </fieldset>
+
+        <br><br>
+
+        <p>Zdarzenie <span id="podkresl">click</span> - wykonuje funkcję po kliknięciu.</p>
+        <button id="przycisk1">Kliknij mnie</button>
+
+        <p>Zdarzenie <span id="podkresl">mouseover / mouseout</span> - reakcja na najechanie myszką.</p>
+        <button id="przycisk2">Najedź na mnie</button>
+
+        <p>Zdarzenie <span id="podkresl">dblclick</span> - wykonuje funkcję po dwukrotnym kliknięciu.</p>
+        <button id="przycisk3">Kliknij dwa razy</button>
+
+        <p>Zdarzenie <span id="podkresl">mousedown / mouseup</span> - naciśnięcie i puszczenie przycisku myszy.</p>
+        <button id="przycisk4">Przytrzymaj mnie</button>
+
+        <p>Zdarzenie <span id="podkresl">mousemove</span> - reakcja na ruch kursora.</p>
+        <button id="przycisk5">Poruszaj kursorem</button>
+    </section>
+
+    <section id="lekcja2">
+        <h2>Lekcja 2 - Formularze</h2>
+        <fieldset>
+        <p>Jak podłączyć zdarzenia do formularzy?</p>
+        <p>1.<span id="podkresl">let imie = document.forms['formularz1'].elements['imie'];</span> - metoda pierwsza</p>
+        <p>2.<span id="podkresl">let nazwisko = document.forms["formularz1"].nazwisko.value;</span> - metoda druga</p>
+        <p>3.<span id="podkresl">let wiek = document.forms.formularz1.wiek.value;</span> - metoda trzecia</p>
+        <p>4.<span id="podkresl">let adres = document.forms.formularz1.elements['adres'].value;</span> - metoda czwarta</p>
+        <p>5.<span id="podkresl">let wzrost = document.querySelector('#formularz2 input[name="wzrost"]').value;</span> - metoda piata</p>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+        <h3>Wypełnij formularz - funkcja <span id="podkresl">submit</span></h3>
+        <p>Co robi submit? Submit to funkcja która umożliwia wysłanie formularza, umożliwia także wyświetlenie danych z pomocą skryptu.</p>
+
+        <form id="formularz1">
+            <p>Imię: <input type="text" name="imie" required></p>
+            <p>Nazwisko: <input type="text" name="nazwisko" required></p>
+            <p>Wiek: <input type="number" name="wiek" required></p>
+            <p>Adres: <input type="text" name="adres" required></p>
+            <p>Wzrost: <input type="number" name="wzrost" required></p>
+
+            <button type="submit">Wyświetl dane</button>
+        </form>
+
+        <h3>Informacje o użytkowniku</h3>
+        <p id="wynik">Tutaj pojawią się dane.</p>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+        <h3>Przykład z funkcją <span id="podkresl">onchange</span></h3>
+        <p>(Przykład z w3schools)</p>
+        <p>Co robi onchange? Onchange to funkcja która zmienia daną rzecz po wejściu w interakcje z czymś.</p>
+
+        <p>Wybierz markę auta</p>
+
+        <select id="mojwybor" onchange="mojafunkcja()">
+            <option value="Audi">Audi
+            <option value="BMW">BMW
+            <option value="Mercedes">Merceddes
+            <option value="Volvo">Volvo
+        </select>
+
+        <p id="wynik2">Tu pojawi się wynik: </p>
+        </fieldset>
+
+        <br><br>
+
+        <form id="formularzchange">
+            <fieldset>
+            <h3>Formularz z <span id="podkresl">change</span></h3>
+            <p>Co robi change? Change to funkcja która zmienia daną rzecz po wejściu w interakcje z czymś.</p>
+
+            <p>Przykład checkbox</p>
+            <p><input type="checkbox" name="koty" id="kotragdoll" value="ragdoll">Kot rasy ragdoll</p>
+            <p><input type="checkbox" name="koty" id="kotmaine" value="mainecoon">Kot rasy maine coon</p>
+            <p><input type="checkbox" name="koty" id="kotbryt" value="brytyjski">Kot brytyjski</p>
+        </form>
+
+        <p id="wypisz">Tu pojawi się wynik: </p>
+        </fieldset>
+
+    </section>
+
+    <section id="lekcja3">
+        <h2>Lekcja 3 - blur, focus etc.</h2>
+
+        <form id="formfocus">
+            <p>Kliknij przycisk, aby włączyć focus.</p>
+            <p>Jak działa focus? Po kliknięciu przycisku tekst zostaje zaznaczony.</p>
+            <input type="text" id="testfocus" placeholder="Wpisz coś">
+            <button type="button" id="btnfocus">Włącz focus.</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>JavaScript - moje notatki</p>
+    </footer>
+
+    <script src="Script.js"></script>
+
+</body>
+</html>
